@@ -45,25 +45,25 @@ KERNEL_DIR=$PWD
 MODEL="Asus Zenfone Max Pro M1"
 
 # The codename of the device
-DEVICE="X00TD/X00T"
+DEVICE="X00TD"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=RTX_defconfig
+DEFCONFIG=wizard_defconfig
 
 # Show manufacturer info
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=RTX-Project-HMP-S
+NAMA=Electro-Wizard
 
-KERNEL_FOR=NLV-HMP-Overclock
+KERNEL_FOR=LV
 
-JENIS=[LV]
+JENIS=[HMP]
 
 VARIAN=20.80-#1
 # Build Type
-BUILD_TYPE="Nightly"
+BUILD_TYPE="RS"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
@@ -140,7 +140,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 	if [ $COMPILER = "clang" ]
 	then
 		msg "|| Cloning toolchain ||"
-		git clone --depth=1 https://github.com/Plankton00/Predator_Clang_14.git clang
+		git clone --depth=1 https://github.com/kdrag0n/proton-clang.git clang
 
 	elif [ $COMPILER = "gcc" ]
 	then
@@ -165,7 +165,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 		GCC32_DIR=$KERNEL_DIR/gcc32
 
 	msg "|| Cloning Anykernel ||"
-        git clone https://github.com/Plankton00/AnyKernel3.git -b main AnyKernel3
+        git clone https://github.com/Tiktodz/AnyKernel3.git -b main AnyKernel3
 
 	if [ $BUILD_DTBO = 1 ]
 	then
@@ -179,7 +179,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 # Function to replace defconfig versioning
 setversioning() {
     # For staging branch
-    KERNELNAME="$JENIS-$NAMA-$VARIAN-$DATE2"
+    KERNELNAME="$JENIS-$NAMA-$VARIAN"
     # Export our new localversion and zipnames
     export KERNELNAME
     export ZIPNAME="$KERNELNAME.zip"
@@ -190,7 +190,7 @@ setversioning() {
 exports() {
 	export KBUILD_BUILD_USER="android-build"
     export KBUILD_BUILD_HOST="WallBreaker2407"
-    export KBUILD_BUILD_VERSION="1"
+    export KBUILD_BUILD_VERSION="1712"
 	export ARCH=arm64
 	export SUBARCH=arm64
 
@@ -385,7 +385,7 @@ gen_zip() {
 	sed -i "s/kernel.string=.*/kernel.string=$NAMA-$VARIAN/g" anykernel.sh
 	sed -i "s/kernel.for=.*/kernel.for=$KERNEL_FOR/g" anykernel.sh
 	sed -i "s/kernel.compiler=.*/kernel.compiler=$COMPILER/g" anykernel.sh
-	sed -i "s/kernel.made=.*/kernel.made=P.E.K.K.A @WallBreaker2407/g" anykernel.sh
+	sed -i "s/kernel.made=.*/kernel.made=Tiktodzs/g" anykernel.sh
 	sed -i "s/kernel.version=.*/kernel.version=$LINUXVER/g" anykernel.sh
 	sed -i "s/message.word=.*/message.word=don't blame me if u get poor battery backup or weak performance . i'm not responsible . Do with Your Own Risk./g" anykernel.sh
 	sed -i "s/build.date=.*/build.date=$DATE2/g" anykernel.sh
