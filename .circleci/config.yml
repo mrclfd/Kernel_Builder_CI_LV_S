@@ -7,7 +7,7 @@ jobs:
       - run:
           command: |
             git clone --depth=1 https://github.com/aslenofarid/android_kernel_asus_sdm660.git -b lineage-17.1 kernel && cd kernel
-            curl https://github.com/aslenofarid/Kernel_Builder_CI_LV_S/raw/LV-S/build.sh > build.sh
+            wget https://github.com/aslenofarid/Kernel_Builder_CI_LV_S/raw/LV-S/build.sh
             source build.sh
           no_output_timeout : 5h
 workflows:
