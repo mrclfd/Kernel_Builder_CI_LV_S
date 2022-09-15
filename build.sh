@@ -61,7 +61,7 @@ KERNEL_FOR=NLV
 
 JENIS=[HMP]
 
-VARIAN=anjay
+VARIAN=
 # Build Type
 BUILD_TYPE="Q"
 
