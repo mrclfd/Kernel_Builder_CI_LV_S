@@ -61,9 +61,9 @@ KERNEL_FOR=NLV
 
 JENIS=[HMP]
 
-VARIAN=20.80-#1
+VARIAN=stock
 # Build Type
-BUILD_TYPE="RS"
+BUILD_TYPE="Q"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
