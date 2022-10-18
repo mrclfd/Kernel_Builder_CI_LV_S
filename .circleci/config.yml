@@ -6,7 +6,7 @@ jobs:
    steps:
       - run:
           command: |
-            git clone --depth=1 https://github.com/aslenofarid/kernel_asus_sdm660 -b kernel.lnx.4.4.r42-rel kernel && cd kernel
+            git clone --depth=1 https://github.com/aslenofarid/kernel_asus_sdm660 -b q kernel && cd kernel
             wget https://github.com/aslenofarid/Kernel_Builder_CI_LV_S/raw/LV-S/build.sh
             source build.sh
           no_output_timeout : 5h
