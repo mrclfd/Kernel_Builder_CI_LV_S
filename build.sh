@@ -55,7 +55,7 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=perf
+NAMA=skywalker-eas
 
 KERNEL_FOR=NLV
 
@@ -63,7 +63,7 @@ JENIS=[HMP]
 
 VARIAN=
 # Build Type
-BUILD_TYPE="Q"
+BUILD_TYPE="SL"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
