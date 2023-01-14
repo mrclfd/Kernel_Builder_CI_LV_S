@@ -55,9 +55,9 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=skywalker-eas
+NAMA=perf
 
-KERNEL_FOR=NLV
+KERNEL_FOR=LV
 
 JENIS=[HMP]
 
