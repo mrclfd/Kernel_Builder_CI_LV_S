@@ -55,7 +55,7 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=perf
+NAMA=perf+
 
 KERNEL_FOR=LV
 
