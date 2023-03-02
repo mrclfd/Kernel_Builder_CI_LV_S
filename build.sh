@@ -63,7 +63,7 @@ JENIS=[HMP]
 
 VARIAN=
 # Build Type
-BUILD_TYPE="SL"
+BUILD_TYPE="Q"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
@@ -99,7 +99,7 @@ BUILD_DTBO=0
 
 # Sign the zipfile
 # 1 is YES | 0 is NO
-SIGN=1
+SIGN=0
 	if [ $SIGN = 1 ]
 	then
 		#Check for java
