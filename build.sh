@@ -55,7 +55,7 @@ DEFCONFIG=darkonah_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=darkonah-msm
+NAMA=darkonah
 
 KERNEL_FOR=NLV
 
