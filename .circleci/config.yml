@@ -7,7 +7,7 @@ jobs:
       - run:
           command: |
             git clone  --recursive https://github.com/aslenofarid/kernel_asus_sdm660 -b potum-ksu kernel && cd kernel
-            bash build.sh
+            bash ../build.sh
           no_output_timeout : 5h
 workflows:
   version: 2.1
