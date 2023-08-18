@@ -165,7 +165,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 		GCC32_DIR=$KERNEL_DIR/gcc32
 
 	msg "|| Cloning Anykernel ||"
-        git clone https://github.com/aslenofarid/AnyKernel3-1 -b main AnyKernel3
+        git clone https://github.com/aslenofarid/AnyKernel3 -b master AnyKernel3
 
 	if [ $BUILD_DTBO = 1 ]
 	then
