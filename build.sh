@@ -55,7 +55,7 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=Potum-KSU
+NAMA=perf+
 
 KERNEL_FOR=NLV
 
@@ -63,7 +63,7 @@ JENIS=[HMP]
 
 VARIAN=
 # Build Type
-BUILD_TYPE="Q"
+BUILD_TYPE="T"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
