@@ -55,7 +55,7 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=perf+
+NAMA=perf-KSU
 
 KERNEL_FOR=NLV
 
@@ -63,7 +63,7 @@ JENIS=[HMP]
 
 VARIAN=
 # Build Type
-BUILD_TYPE="T"
+BUILD_TYPE="Q"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
