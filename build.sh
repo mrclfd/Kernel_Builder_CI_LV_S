@@ -63,7 +63,7 @@ JENIS=[HMP]
 
 VARIAN=
 # Build Type
-BUILD_TYPE="R"
+BUILD_TYPE="Q"
 
 # Specify compiler.
 # 'clang' or 'clangxgcc' or 'gcc'
