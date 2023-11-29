@@ -55,7 +55,7 @@ DEFCONFIG=X00TD_defconfig
 MANUFACTURERINFO="ASUSTek Computer Inc."
 
 # Kernel Variant
-NAMA=perf+
+NAMA=perf+ asleno
 
 KERNEL_FOR=LV
 
@@ -189,7 +189,7 @@ setversioning() {
 
 exports() {
 	export KBUILD_BUILD_USER="android-build"
-    export KBUILD_BUILD_HOST="aslenofarid"
+    export KBUILD_BUILD_HOST="raph"
 	export ARCH=arm64
 	export SUBARCH=arm64
 
