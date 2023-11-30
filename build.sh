@@ -179,7 +179,7 @@ DATE2=$(TZ=Asia/Jakarta date +"%Y%m%d")
 # Function to replace defconfig versioning
 setversioning() {
     # For staging branch
-    KERNELNAME="$NAMA-$DEVICE-$BUILD_TYPE-$LINUXVER-$JENIS-$VARIAN-$DATE2"
+    KERNELNAME="$NAMA-$DEVICE-$JENIS-$BUILD_TYPE-$LINUXVER-$DATE2"
     # Export our new localversion and zipnames
     export KERNELNAME
     export ZIPNAME="$KERNELNAME.zip"
@@ -381,7 +381,7 @@ gen_zip() {
 	fi
 	cd AnyKernel3 || exit
 	cp -af anykernel-real.sh anykernel.sh
-	sed -i "s/kernel.string=.*/kernel.string=$NAMA-$VARIAN/g" anykernel.sh
+	sed -i "s/kernel.string=.*/kernel.string=$NAMA/g" anykernel.sh
 	sed -i "s/kernel.for=.*/kernel.for=$KERNEL_FOR/g" anykernel.sh
 	sed -i "s/kernel.compiler=.*/kernel.compiler=$COMPILER/g" anykernel.sh
 	sed -i "s/kernel.made=.*/kernel.made=raph/g" anykernel.sh
