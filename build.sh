@@ -59,7 +59,7 @@ NAMA=perf+_asleno
 
 KERNEL_FOR=LV
 
-JENIS=[HMP]
+JENIS=HMP
 
 VARIAN=
 # Build Type
